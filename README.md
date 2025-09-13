@@ -38,7 +38,7 @@ sudo mount /dev/xvdf /data
 # Persist mount across reboots
 echo "/dev/xvdf /data ext4 defaults,nofail 0 2" | sudo tee -a /etc/fstab
 ```
-### 3. Install Apache & Move Web Root to EBS
+### 4. Install Apache & Move Web Root to EBS
 ```bash
 sudo yum  update -y
 sudo yum install -y httpd
@@ -105,6 +105,7 @@ echo "<h1>Hello from Apache on Amazon Linux 2023</h1>" > /var/www/html/index.htm
 - Terminate EC2 instance
 - Detach & delete EBS volume
 - Delete security group
+
 
 
 
